@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Roboto+Mono&amp;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <link rel="stylesheet" href="../css/all.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -15,16 +15,16 @@
   <body>
     <div class="d-flex">
       <div class="menu">
-        <div class="logo pb-4"><img src="../img/logo-ANSWER.svg" alt=""/></div>
+        <div class="logo pb-4"><img src="img/logo-ANSWER.svg" alt=""/></div>
         <ul>
           <li><a href="#"> <span class="material-icons">insert_chart</span><span>Dashboard</span></a></li>
           <li><span class="material-icons">question_answer</span><a href="">Question</a></li>
-          <li class="active"><span class="material-icons">assignment</span><a href="">Assignment</a></li>
+          <li class="active"><span class="material-icons">assignment</span><a href="assignment.html">Assignment</a></li>
           <li><span class="material-icons">video_library</span><a href="">Course</a></li>
-          <li><span class="material-icons">people</span><a href="">Admin</a></li>
+          <li><span class="material-icons">people</span><a href="admin.html">Admin</a></li>
           <li><span class="material-icons">settings</span><a href="">Settings</a></li>
         </ul>
-        <div class="user media"><img class="user-img mr-3" src="../img/andychen.jpeg" alt=""/>
+        <div class="user media"><img class="user-img mr-3" src="img/andychen.jpeg" alt=""/>
           <div class="media-body">
             <div class="font-weight-bold mt-0">Andy Chen</div>
             <div class="user-email">andy0401@mail.com</div>
@@ -33,7 +33,7 @@
       </div>
       <div class="assignment">
         <div class="container">
-          <div class="assignment-header d-flex align-items-center mb-4">
+          <div class="toolbar d-flex align-items-center mb-4">
             <h4>Assignment</h4>
             <div class="dropdown">
               <button class="btn dropdown-toggle d-flex align-items-center font-weight-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Courses
@@ -142,5 +142,25 @@
         </div>
       </div>
     </div>
+    <script>
+      $(function(){
+          $('.arrow-down').click(function(){
+              $('.arrow-down').hide();
+              $('.arrow-up').show();
+      
+      
+          });
+          $('.arrow-up').click(function(){
+              $('.arrow-up').hide();
+              $('.arrow-down').show();
+      
+      
+          });
+      
+      
+      
+      
+      });
+    </script>
   </body>
 </html>
