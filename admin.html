@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Roboto+Mono&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="css/all.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>week5</title>
+  </head>
+  <body>
+    <div class="d-flex">
+      <div class="menu">
+        <div class="logo pb-4"><img src="img/logo-ANSWER.svg" alt=""/></div>
+        <ul>
+          <li><a href="#"> <span class="material-icons">insert_chart</span><span>Dashboard</span></a></li>
+          <li><span class="material-icons">question_answer</span><a href="">Question</a></li>
+          <li class="active"><span class="material-icons">assignment</span><a href="assignment.html">Assignment</a></li>
+          <li><span class="material-icons">video_library</span><a href="">Course</a></li>
+          <li><span class="material-icons">people</span><a href="admin.html">Admin</a></li>
+          <li><span class="material-icons">settings</span><a href="">Settings</a></li>
+        </ul>
+        <div class="user media"><img class="user-img mr-3" src="img/andychen.jpeg" alt=""/>
+          <div class="media-body">
+            <div class="font-weight-bold mt-0">Andy Chen</div>
+            <div class="user-email">andy0401@mail.com</div>
+          </div>
+        </div>
+      </div>
+      <div class="admin">
+        <div class="container">
+          <div class="toolbar d-flex align-items-center mb-4">
+            <h4>Admin</h4>
+            <button class="btn d-flex align-items-center font-weight-bold" type="button">
+              <div class="material-icons color-accent">add</div><span>Add New Admin</span>
+            </button>
+            <div class="icon d-flex"><a class="mr-4" href="#"><span class="material-icons">search</span></a><a href="#"><span class="material-icons">notifications_active</span></a></div>
+          </div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Verified</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1</td>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td>Yes</td>
+                <td>
+                  <button class="btn" data-toggle="modal" data-target="#exampleModal"><span class="material-icons">remove_red_eye</span></button>
+                </td>
+                <td>
+                  <button class="btn" data-toggle="modal" data-target="#exampleModal1"><span class="material-icons">edit</span></button>
+                </td>
+              </tr>
+              <tr>
+                <td>#2</td>
+                <td>Zaina Goldsmith</td>
+                <td>zaina.goldsmith@mail.com</td>
+                <td>Yes</td>
+                <td><span class="material-icons pr-3">remove_red_eye</span></td>
+                <td><span class="material-icons">edit</span></td>
+              </tr>
+              <tr>
+                <td>#3</td>
+                <td>Mahima Lopez</td>
+                <td>Mahima.Lopez@mail.com</td>
+                <td>Yes</td>
+                <td><span class="material-icons pr-3">remove_red_eye</span></td>
+                <td><span class="material-icons">edit</span></td>
+              </tr>
+              <tr>
+                <td>#4</td>
+                <td>Pharrell Murray</td>
+                <td>Pharrell.Murray@mail.com</td>
+                <td>Yes</td>
+                <td><span class="material-icons pr-3">remove_red_eye</span></td>
+                <td><span class="material-icons">edit</span></td>
+              </tr>
+              <tr>
+                <td>#5</td>
+                <td>Annika Mcbride</td>
+                <td>Annika.Mcbride@mail.com</td>
+                <td>Yes</td>
+                <td><span class="material-icons pr-3">remove_red_eye</span></td>
+                <td><span class="material-icons">edit</span></td>
+              </tr>
+              <tr>
+                <td>#6</td>
+                <td>Fatimah Clark</td>
+                <td>Fatimah.Clark@mail.com</td>
+                <td>Yes</td>
+                <td><span class="material-icons pr-3">remove_red_eye</span></td>
+                <td><span class="material-icons">edit</span></td>
+              </tr>
+              <tr>
+                <td>#7</td>
+                <td>Klaudia Rhodes</td>
+                <td>Klaudia.Rhodes@mail.com</td>
+                <td>Yes</td>
+                <td><span class="material-icons pr-3">remove_red_eye</span></td>
+                <td><span class="material-icons">edit</span></td>
+              </tr>
+              <tr>
+                <td>#8</td>
+                <td>Tillie Lucero</td>
+                <td>Tillie.Lucero@mail.com</td>
+                <td>Yes</td>
+                <td><span class="material-icons pr-3">remove_red_eye</span></td>
+                <td><span class="material-icons">edit</span></td>
+              </tr>
+              <tr>
+                <td>#9</td>
+                <td>Sabrina Stephenson</td>
+                <td>Sabrina.Stephenson@mail.com</td>
+                <td>Yes</td>
+                <td><span class="material-icons pr-3">remove_red_eye</span></td>
+                <td><span class="material-icons">edit</span></td>
+              </tr>
+              <tr>
+                <td>#10</td>
+                <td>Annie Smith</td>
+                <td>Annie.Smith@mail.com</td>
+                <td>Yes</td>
+                <td><span class="material-icons pr-3">remove_red_eye</span></td>
+                <td><span class="material-icons">edit</span></td>
+              </tr>
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="media">
+                        <div class="mr-3"></div>
+                        <div class="media-body">
+                          <ul>
+                            <li>#1</li>
+                            <li>Admin</li>
+                            <li class="font-weight-bold h4">Emir Wicks</li>
+                            <li class="text-muted">emir.wicks@mail.com</li>
+                          </ul>
+                          <div class="d-flex justify-content-between"><span class="bg-custom-primary px-2">verified   </span>
+                            <div class="arrow-down material-icons text-custom-accent" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">keyboard_arrow_down</div>
+                            <div class="arrow-up material-icons text-custom-accent" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">keyboard_arrow_up</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer collapse" id="collapseExample">
+                      <button class="btn btn-custom-warning" type="button" data-dismiss="modal">Deactivate</button>
+                      <button class="btn btn-custom-accent" type="button" data-dismiss="modal">Edit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <form>
+                <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4>Edit Admin</h4>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      </div>
+                      <hr/>
+                      <div class="modal-body">
+                        <h5>Account</h5>
+                        <label for="edit-name">Name</label>
+                        <div class="input-group mb-3">
+                          <input class="bg-custom-primary border-0 form-control" type="text" id="edit-name" placeholder="Emir Wicks"/>
+                        </div>
+                        <label for="edit-email">Email</label>
+                        <div class="input-group mb-3">
+                          <input class="bg-custom-primary border-0 form-control" type="text" id="edit-email" placeholder="emir.wicks@mail.com"/>
+                        </div>
+                        <hr/>
+                        <h5 class="mb-2">Verification</h5>
+                        <div class="d-flex justify-content-between mb-3">
+                          <div class="d-flex align-items-center">
+                            <div class="material-icons text-custom-accent pr-1">check_circle</div><span class="font-weight-bold">Verified</span>
+                          </div><span>2020/4/12</span>
+                        </div>
+                        <button class="btn btn-custom-outline-accent w-100 py-2" type="button" disabled="disabled">Send Verification Mail</button>
+                        <hr/>
+                        <div class="form-group">
+                          <label class="h5 font-weight-bold" for="accesslv">Access Level</label>
+                          <select class="form-control" id="accesslv">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </div>
+                        <hr/>
+                        <h5>Custom Access</h5>
+                        <div class="form-check mb-1">
+                          <input class="form-check-input" type="checkbox" value="" id="lectureCheck"/>
+                          <label class="form-check-label" for="lectureCheck">Lecture</label>
+                        </div>
+                        <div class="form-check mb-1">
+                          <input class="form-check-input" type="checkbox" value="" id="couponCheck"/>
+                          <label class="form-check-label" for="couponCheck">Coupon</label>
+                        </div>
+                        <div class="form-check mb-1"> 
+                          <input class="form-check-input" type="checkbox" value="" id="messageCheck"/>
+                          <label class="form-check-label" for="messageCheck">Message</label>
+                        </div>
+                        <div class="form-check mb-1">
+                          <input class="form-check-input" type="checkbox" value="" id="SettingCheck"/>
+                          <label class="form-check-label" for="SettingCheck">Setting</label>
+                        </div>
+                        <div class="form-check mb-1">
+                          <input class="form-check-input" type="checkbox" value="" id="taskMenuCheck"/>
+                          <label class="form-check-label" for="taskMenuCheck">TaskMenu</label>
+                        </div>
+                        <hr/>
+                        <h5 class="mb-3">Deactivate Account</h5>
+                        <div class="d-flex mb-3">
+                          <div class="material-icons text-custom-warning">warning</div><span class="text-custom-warning">This cannot be undone!</span>
+                        </div>
+                        <button class="btn btn-custom-warning w-100 mb-3">Deactivate This Account</button>
+                      </div>
+                      <hr class="w-100"/>
+                      <div class="modal-footer w-100">
+                        <button class="btn btn-custom-outline-accent" type="button" data-dismiss="modal">Cancel</button>
+                        <button class="btn btn-custom-accent" type="button" data-dismiss="modal">Update</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </tbody>
+          </table>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&raquo;</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(function(){
+          $('.arrow-down').click(function(){
+              $('.arrow-down').hide();
+              $('.arrow-up').show();
+      
+      
+          });
+          $('.arrow-up').click(function(){
+              $('.arrow-up').hide();
+              $('.arrow-down').show();
+      
+      
+          });
+      
+      
+      
+      
+      });
+    </script>
+  </body>
+</html>

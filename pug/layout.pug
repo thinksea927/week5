@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet", href="css/all.css")
+        script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")
+        title week5
+    body
+        .d-flex
+            .menu
+                .logo.pb-4
+                    img(src="img/logo-ANSWER.svg", alt="")
+                ul
+                    li
+                        a(href="#") 
+                            span.material-icons insert_chart
+                            span Dashboard
+                    li
+                        span.material-icons question_answer
+                        a(href="") Question
+                    li.active
+                        span.material-icons assignment
+                        a(href="assignment.html") Assignment
+                    li
+                        span.material-icons video_library
+                        a(href="") Course
+                    li
+                        span.material-icons people
+                        a(href="admin.html") Admin
+                    li
+                        span.material-icons settings
+                        a(href="") Settings
+                .user.media
+                    img.user-img.mr-3(src="img/andychen.jpeg", alt="")
+                    .media-body
+                        .font-weight-bold.mt-0 Andy Chen
+                        .user-email andy0401@mail.com
+
+            block content
+        include script

@@ -1,0 +1,150 @@
+
+.btn:focus
+    box-shadow: none
+.btn:hover
+    color: $color-accent
+.dropdown-toggle
+    &::after
+        display: none
+
+.color-accent
+    color: $color-accent
+li
+    font-weight: normal
+.assignment, .admin
+    padding: 2rem 17px
+    min-width: 984px
+    h4
+        margin-right: 2rem
+.icon
+    margin-left: auto
+    a
+        height: 24px
+
+.comment
+    font-size: 12px
+    line-height: 26px
+
+.font-color-light
+    color: $color-dark-lighter
+.assignment-content-list
+    width: 35.398%
+
+.list-group-item
+    padding: 0.75rem
+    color: $color-dark
+    border-color: $color-primary-dark
+.list-group-item.active
+    background-color: $color-primary
+    color: $color-dark
+    border-color: $color-primary-dark
+    
+h6, h4
+    margin-bottom: 0
+.card
+    border-color: $color-primary-dark
+    
+.card-header
+    position: relative
+    background-color: $color-primary
+    .material-icons
+        cursor: pointer
+        position: absolute
+        right: 1rem
+        top: 50%
+        transform: translateY(-50%)
+        &::after
+            content: "這裡沒東西唷!"
+            position: absolute
+            opacity: 0
+            background-color: $color-primary-dark
+            font-size: 14px
+            color: $color-white
+            top: 1rem
+            line-height: 2
+            transition: all 0.5s 
+            transition-delay: 0.3s
+        &:hover
+            &::after
+                opacity: 1
+.card-body
+    padding-right: 2rem
+    padding-left: 1rem
+    img
+        width: 40px
+        height: 40px
+        border-radius: 999rem
+    p
+        font-size: 0.875rem
+    ul
+        margin-bottom: 0
+    li
+        &:nth-child(1)
+            .avatar
+                background: url(../img/emilywang.jpeg) center center no-repeat
+                height: 40px
+                width: 40px
+                background-size: cover
+                border-radius: 999rem
+        &:nth-child(2)
+            .avatar
+                background: url(../img/andychen.jpeg) center center no-repeat
+                height: 40px
+                width: 40px
+                background-size: cover
+                border-radius: 999rem
+
+            
+
+.assignment-content-dialog
+    width: 64.607%
+    .media-body
+        &::after
+            content: ""
+            display: block
+            height: 1px
+            // width: 488px
+            background-color: $color-primary-dark
+            margin: 16.5px 0
+        ul
+            padding-left: 1rem 
+.assignment-content-dialog
+    .media
+        &:last-child
+            margin-bottom: 0
+            .media-body
+                &::after
+                    display: none
+    .media
+        li
+            text-indent: 12px  
+            font-size: 0.875rem
+
+.heightlight
+    background-color: $color-primary
+    color: $color-accent
+    font-family: Roboto Mono
+.attach
+    // height: 40px
+    padding: 7px 12px
+    background-color: $color-primary
+    border: 1px solid $color-primary-dark
+    border-radius: 2px
+
+
+.tab-footer-btn
+    margin-left: auto
+    button
+        padding: 8px 32px
+        &:nth-child(1)
+            border: 1px solid $color-accent
+            color: $color-accent
+            &:hover
+                background-color: lighten($color-accent, 5%)
+                color: $color-white
+        &:nth-child(2)
+            background-color: $color-accent
+            color: $color-white
+            &:hover
+                background-color: lighten($color-accent, 5%)
+            

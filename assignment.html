@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Roboto+Mono&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="../css/all.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>week5</title>
+  </head>
+  <body>
+    <div class="d-flex">
+      <div class="menu">
+        <div class="logo pb-4"><img src="../img/logo-ANSWER.svg" alt=""/></div>
+        <ul>
+          <li><a href="#"> <span class="material-icons">insert_chart</span><span>Dashboard</span></a></li>
+          <li><span class="material-icons">question_answer</span><a href="">Question</a></li>
+          <li class="active"><span class="material-icons">assignment</span><a href="">Assignment</a></li>
+          <li><span class="material-icons">video_library</span><a href="">Course</a></li>
+          <li><span class="material-icons">people</span><a href="">Admin</a></li>
+          <li><span class="material-icons">settings</span><a href="">Settings</a></li>
+        </ul>
+        <div class="user media"><img class="user-img mr-3" src="../img/andychen.jpeg" alt=""/>
+          <div class="media-body">
+            <div class="font-weight-bold mt-0">Andy Chen</div>
+            <div class="user-email">andy0401@mail.com</div>
+          </div>
+        </div>
+      </div>
+      <div class="assignment">
+        <div class="container">
+          <div class="assignment-header d-flex align-items-center mb-4">
+            <h4>Assignment</h4>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle d-flex align-items-center font-weight-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Courses
+                <div class="material-icons color-accent">expand_more</div>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Course1</a><a class="dropdown-item" href="#">Course2</a><a class="dropdown-item" href="#">Course3</a></div>
+            </div>
+            <div class="icon d-flex"><a class="mr-4" href="#"><span class="material-icons">search</span></a><a href="#"><span class="material-icons">notifications_active</span></a></div>
+          </div>
+          <div class="assignment-content d-flex">
+            <div class="assignment-content-list mr-3">
+              <div class="dropdown"><a class="d-flex btn dropdown-toggle font-weight-bold p-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>All (</span><span class="card-number">4</span><span>)</span><span class="material-icons color-accent">expand_more</span></a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">1</a><a class="dropdown-item" href="#">2</a><a class="dropdown-item" href="#">3</a></div>
+              </div>
+              <div class="list-group" id="list-tab" role="tablist"><a class="list-group-item list-group-item-action active" data-toggle="list" href="list-1" role="tab">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="text-small">Chapter Assignment 2</div>
+                    <div class="text-small">4hrs ago</div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h6 class="font-weight-bold">Please check this file</h6>
+                    <div class="text-small font-color-light">Emily Wang</div>
+                  </div></a><a class="list-group-item list-group-item-action" data-toggle="list" href="list-2" role="tab">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="text-small">Chapter Assignment 1</div>
+                    <div class="text-small">12 hrs ago</div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h6>My Homework</h6>
+                    <div class="text-small font-color-light">David Xu</div>
+                  </div></a><a class="list-group-item list-group-item-action" data-toggle="list" href="list-3" role="tab">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="text-small">Final Assignment</div>
+                    <div class="text-small">18 hrs ago</div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h6>Have a problem with this</h6>
+                    <div class="text-small font-color-light">Tony Wei</div>
+                  </div></a><a class="list-group-item list-group-item-action" data-toggle="list" href="list-4" role="tab">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="text-small">Final Assignment</div>
+                    <div class="text-small">19 hrs ago</div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h6>Did I do it right?</h6>
+                    <div class="text-small font-color-light">Christina Lin</div>
+                  </div></a></div>
+            </div>
+            <div class="assignment-content-dialog">
+              <div class="comment font-color-light text-right"><span class="comment-number pr-1">2</span><span>comments</span></div>
+              <div class="tab-content mb-3" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-1" role="tabpanel">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="text-small">Chapter Assignment 2 / HTML&CSS</div>
+                      <h6 class="font-weight-bold">Please check this file for me, thanks!</h6><span class="material-icons">more_vert</span>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-unstyled">
+                        <li class="media">
+                          <div class="avatar mr-3"></div>
+                          <div class="media-body">
+                            <h5 class="mt-0 mb-1">Emily Wang</h5>
+                            <div class="text-small font-color-light mb-3">10:38 AM (4 hours ago)</div>
+                            <p>
+                              Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="heightlight mx-1">div</span>is bigger than the height of the 
+                              <span class="heightlight mx-1">img</span>? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?
+                            </p>
+                            <button class="attach btn d-flex align-items-center font-weight-bold" type="button"><span class="material-icons">attach_file</span><span>HW-2-David.zip</span></button>
+                          </div>
+                        </li>
+                        <li class="media">
+                          <div class="avatar mr-3"></div>
+                          <div class="media-body">
+                            <h5 class="mt-0 mb-1">Andy Chen (You)</h5>
+                            <div class="text-small font-color-light mb-3">13:24 AM (1 hours ago)</div>
+                            <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br/><br/>You can: 　<br/></p>
+                            <ul>
+                              <li>
+                                • adjust the <span class="heightlight mx-1">vertical-align </span>of the image to position it elsewhere (e.g. the<span class="heightlight mx-1">middle</span>) or 　</li>
+                              <li>
+                                • change the <span class="heightlight mx-1">display</span>so it isn’t inline.</li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade show" id="list-2" role="tabpanel"></div>
+                <div class="tab-pane fade show" id="list-3" role="tabpanel"></div>
+                <div class="tab-pane fade show" id="list-4" role="tabpanel"></div>
+              </div>
+              <div class="tab-footer d-flex align-items-center">
+                <div class="btn-group">
+                  <button class="btn" type="button"><span class="material-icons">keyboard_arrow_left</span></button>
+                  <button class="btn" type="button"><span class="material-icons">keyboard_arrow_right</span></button>
+                </div>
+                <div class="tab-footer-btn">
+                  <button class="btn" type="button">Mark as read</button>
+                  <button class="btn" type="button">Reply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

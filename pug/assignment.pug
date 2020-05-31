@@ -1,0 +1,124 @@
+extends layout
+block content
+    .assignment
+        .container
+            .toolbar.d-flex.align-items-center.mb-4
+                h4 Assignment
+                .dropdown
+                    button.btn.dropdown-toggle.d-flex.align-items-center.font-weight-bold(type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") All Courses
+                        .material-icons.color-accent expand_more
+                    .dropdown-menu(aria-labelledby="dropdownMenuButton")
+                        a.dropdown-item(href="#") Course1
+                        a.dropdown-item(href="#") Course2
+                        a.dropdown-item(href="#") Course3
+                .icon.d-flex
+                    a.mr-4(href="#")
+                        span.material-icons search
+                    a(href="#")
+                        span.material-icons notifications_active
+            .assignment-content.d-flex
+                .assignment-content-list.mr-3
+                    .dropdown
+                        a.d-flex.btn.dropdown-toggle.font-weight-bold.p-0(href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                            span All (
+                            span.card-number 4
+                            span )
+                            span.material-icons.color-accent expand_more
+                        .dropdown-menu(aria-labelledby="dropdownMenuLink")
+                            a.dropdown-item(href="#") 1
+                            a.dropdown-item(href="#") 2
+                            a.dropdown-item(href="#") 3
+                    .list-group(id="list-tab" role="tablist")
+                        a.list-group-item.list-group-item-action.active(data-toggle="list" href="list-1" role="tab")
+                            .d-flex.justify-content-between.align-items-center
+                                .text-small Chapter Assignment 2
+                                .text-small 4hrs ago
+                            .d-flex.justify-content-between.align-items-center
+                                h6.font-weight-bold Please check this file
+                                .text-small.font-color-light Emily Wang
+                        a.list-group-item.list-group-item-action(data-toggle="list" href="list-2" role="tab")
+                            .d-flex.justify-content-between.align-items-center
+                                .text-small Chapter Assignment 1
+                                .text-small 12 hrs ago
+                            .d-flex.justify-content-between.align-items-center
+                                h6 My Homework
+                                .text-small.font-color-light David Xu
+                        a.list-group-item.list-group-item-action(data-toggle="list" href="list-3" role="tab")
+                            .d-flex.justify-content-between.align-items-center
+                                .text-small Final Assignment
+                                .text-small 18 hrs ago
+                            .d-flex.justify-content-between.align-items-center
+                                h6 Have a problem with this
+                                .text-small.font-color-light Tony Wei
+                        a.list-group-item.list-group-item-action(data-toggle="list" href="list-4" role="tab")
+                            .d-flex.justify-content-between.align-items-center
+                                .text-small Final Assignment
+                                .text-small 19 hrs ago
+                            .d-flex.justify-content-between.align-items-center
+                                h6 Did I do it right?
+                                .text-small.font-color-light Christina Lin
+                .assignment-content-dialog
+                    .comment.font-color-light.text-right
+                        span.comment-number.pr-1 2
+                        span comments
+                    .tab-content.mb-3(id="nav-tabContent")
+                        .tab-pane.fade.show.active(id="list-1" role="tabpanel")
+                            .card
+                                .card-header
+                                    .text-small Chapter Assignment 2 / HTML&CSS
+                                    h6.font-weight-bold Please check this file for me, thanks!
+                                    span.material-icons more_vert
+
+                                .card-body
+                                    ul.list-unstyled
+                                        li.media
+                                            .avatar.mr-3
+                                            .media-body
+                                                h5.mt-0.mb-1 Emily Wang
+                                                .text-small.font-color-light.mb-3 10:38 AM (4 hours ago)
+                                                p Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the 
+                                                    |
+                                                    span.heightlight.mx-1 div
+                                                    | is bigger than the height of the 
+                                                    |
+                                                    span.heightlight.mx-1 img
+                                                    | ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?
+                                                button.attach.btn.d-flex.align-items-center.font-weight-bold(type="button")
+                                                    span.material-icons attach_file
+                                                    span HW-2-David.zip
+                                        li.media
+                                            .avatar.mr-3
+                                            .media-body
+                                                h5.mt-0.mb-1 Andy Chen (You)
+                                                .text-small.font-color-light.mb-3 13:24 AM (1 hours ago)
+                                                p Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. 
+                                                    br
+                                                    br
+                                                    |You can: 　
+                                                    br
+                                                ul
+                                                    li • adjust the 
+                                                        |
+                                                        span.heightlight.mx-1 vertical-align 
+                                                        |of the image to position it elsewhere (e.g. the
+                                                        span.heightlight.mx-1 middle
+                                                        |) or 　
+                                                    li • change the 
+                                                        |
+                                                        span.heightlight.mx-1 display
+                                                        | so it isn’t inline.
+                        .tab-pane.fade.show(id="list-2" role="tabpanel")
+                        .tab-pane.fade.show(id="list-3" role="tabpanel")
+                        .tab-pane.fade.show(id="list-4" role="tabpanel")
+                    .tab-footer.d-flex.align-items-center
+                        .btn-group
+                            button.btn(type="button")
+                                span.material-icons keyboard_arrow_left
+                            button.btn(type="button")
+                                span.material-icons keyboard_arrow_right
+                        .tab-footer-btn
+                            button.btn(type="button") Mark as read
+                            button.btn(type="button") Reply
+                        
+
+

@@ -1,0 +1,216 @@
+extends layout
+block content
+    .admin
+        .container
+            .toolbar.d-flex.align-items-center.mb-4
+                h4 Admin
+                button.btn.d-flex.align-items-center.font-weight-bold(type="button")
+                        .material-icons.color-accent add
+                        span Add New Admin
+                .icon.d-flex
+                    a.mr-4(href="#")
+                        span.material-icons search
+                    a(href="#")
+                        span.material-icons notifications_active
+            table.table.table-hover
+                thead
+                    tr
+                        th(scope="col") ID
+                        th(scope="col") Name
+                        th(scope="col") Email
+                        th(scope="col") Verified
+                        th(scope="col")
+                        th(scope="col")
+                tbody
+                    tr
+                        td #1
+                        td Emir Wicks
+                        td emir.wicks@mail.com
+                        td Yes
+                        td
+                            button.btn(data-toggle="modal" data-target="#exampleModal")
+                                span.material-icons remove_red_eye
+                        td
+                            button.btn(data-toggle="modal" data-target="#exampleModal1")
+                                span.material-icons edit
+                    tr
+                        td #2
+                        td Zaina Goldsmith
+                        td zaina.goldsmith@mail.com
+                        td Yes
+                        td
+                            span.material-icons.pr-3 remove_red_eye
+                        td
+                            span.material-icons edit
+                    tr
+                        td #3
+                        td Mahima Lopez
+                        td Mahima.Lopez@mail.com
+                        td Yes
+                        td
+                            span.material-icons.pr-3 remove_red_eye
+                        td
+                            span.material-icons edit
+                    tr
+                        td #4
+                        td Pharrell Murray
+                        td Pharrell.Murray@mail.com
+                        td Yes
+                        td
+                            span.material-icons.pr-3 remove_red_eye
+                        td
+                            span.material-icons edit
+                    tr
+                        td #5
+                        td Annika Mcbride
+                        td Annika.Mcbride@mail.com
+                        td Yes
+                        td
+                            span.material-icons.pr-3 remove_red_eye
+                        td
+                            span.material-icons edit
+                    tr
+                        td #6
+                        td Fatimah Clark
+                        td Fatimah.Clark@mail.com
+                        td Yes
+                        td
+                            span.material-icons.pr-3 remove_red_eye
+                        td
+                            span.material-icons edit
+                    tr
+                        td #7
+                        td Klaudia Rhodes
+                        td Klaudia.Rhodes@mail.com
+                        td Yes
+                        td
+                            span.material-icons.pr-3 remove_red_eye
+                        td
+                            span.material-icons edit
+                    tr
+                        td #8
+                        td Tillie Lucero
+                        td Tillie.Lucero@mail.com
+                        td Yes
+                        td
+                            span.material-icons.pr-3 remove_red_eye
+                        td
+                            span.material-icons edit
+                    tr
+                        td #9
+                        td Sabrina Stephenson
+                        td Sabrina.Stephenson@mail.com
+                        td Yes
+                        td
+                            span.material-icons.pr-3 remove_red_eye
+                        td
+                            span.material-icons edit
+                    tr
+                        td #10
+                        td Annie Smith
+                        td Annie.Smith@mail.com
+                        td Yes
+                        td
+                            span.material-icons.pr-3 remove_red_eye
+                        td
+                            span.material-icons edit
+                    .modal.fade#exampleModal(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                        .modal-dialog(role="document")
+                            .modal-content
+                                .modal-header
+                                    button.close(type="button" data-dismiss="modal" aria-label="Close")
+                                        span(aria-hidden="true") &times;
+                                .modal-body
+                                    .media
+                                        .mr-3
+                                        .media-body
+                                            ul
+                                                li #1
+                                                li Admin
+                                                li.font-weight-bold.h4 Emir Wicks
+                                                li.text-muted emir.wicks@mail.com
+                                            .d-flex.justify-content-between
+                                                span.bg-custom-primary.px-2 verified   
+                                                .arrow-down.material-icons.text-custom-accent(data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample") keyboard_arrow_down
+                                                .arrow-up.material-icons.text-custom-accent(data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample") keyboard_arrow_up
+                                .modal-footer.collapse#collapseExample
+                                    button.btn.btn-custom-warning(type="button" data-dismiss="modal") Deactivate
+                                    button.btn.btn-custom-accent(type="button" data-dismiss="modal") Edit
+                    form
+                        .modal.fade#exampleModal1(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                            .modal-dialog(role="document")
+                                .modal-content
+                                    .modal-header
+                                        h4 Edit Admin
+                                        button.close(type="button" data-dismiss="modal" aria-label="Close")
+                                            span(aria-hidden="true") &times;
+                                    hr
+                                    .modal-body
+                                        h5 Account
+                                        label(for="edit-name") Name
+                                        .input-group.mb-3
+                                            input.bg-custom-primary.border-0(type="text" class="form-control" id="edit-name" placeholder="Emir Wicks")
+                                        label(for="edit-email") Email
+                                        .input-group.mb-3
+                                            input.bg-custom-primary.border-0(type="text" class="form-control" id="edit-email" placeholder="emir.wicks@mail.com")
+                                        hr
+                                        h5.mb-2 Verification
+                                        .d-flex.justify-content-between.mb-3
+                                            .d-flex.align-items-center
+                                                .material-icons.text-custom-accent.pr-1 check_circle
+                                                span.font-weight-bold Verified
+                                            span 2020/4/12
+                                        button.btn.btn-custom-outline-accent.w-100.py-2(type="button" disabled) Send Verification Mail
+                                        hr
+                                        .form-group
+                                            label.h5.font-weight-bold(for="accesslv") Access Level
+                                            select.form-control#accesslv
+                                                option 1
+                                                option 2
+                                                option 3
+                                        hr
+                                        h5 Custom Access
+                                        .form-check.mb-1
+                                            input(class="form-check-input" type="checkbox" value="" id="lectureCheck")
+                                            label(class="form-check-label" for="lectureCheck") Lecture
+                                        .form-check.mb-1
+                                            input(class="form-check-input" type="checkbox" value="" id="couponCheck")
+                                            label(class="form-check-label" for="couponCheck") Coupon
+                                        .form-check.mb-1 
+                                            input(class="form-check-input" type="checkbox" value="" id="messageCheck")
+                                            label(class="form-check-label" for="messageCheck") Message
+                                        .form-check.mb-1
+                                            input(class="form-check-input" type="checkbox" value="" id="SettingCheck")
+                                            label(class="form-check-label" for="SettingCheck") Setting
+                                        .form-check.mb-1
+                                            input(class="form-check-input" type="checkbox" value="" id="taskMenuCheck")
+                                            label(class="form-check-label" for="taskMenuCheck") TaskMenu
+                                        hr
+                                        h5.mb-3 Deactivate Account
+                                        .d-flex.mb-3
+                                            .material-icons.text-custom-warning warning
+                                            span.text-custom-warning This cannot be undone!
+                                        button.btn.btn-custom-warning.w-100.mb-3 Deactivate This Account
+                                    hr.w-100
+                                    .modal-footer.w-100
+                                        button.btn.btn-custom-outline-accent(type="button" data-dismiss="modal") Cancel
+                                        button.btn.btn-custom-accent(type="button" data-dismiss="modal") Update
+                                    
+
+
+                
+            nav(aria-label="Page navigation example")
+                ul.pagination.justify-content-end
+                    li.page-item
+                        a.page-link(href="#" aria-label="Previous")
+                            span(aria-hidden="true") &laquo;
+                    li.page-item.active
+                        a.page-link(href="#") 1
+                    li.page-item
+                        a.page-link(href="#") 2
+                    li.page-item
+                        a.page-link(href="#") 3
+                    li.page-item
+                        a.page-link(href="#" aria-label="Previous")
+                            span(aria-hidden="true") &raquo;
+
